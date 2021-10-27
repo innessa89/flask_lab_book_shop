@@ -1,0 +1,22 @@
+header {
+    background-color: rgb(48, 128, 198);
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    border: 10px solid green;
+    background-image: linear-gradient(to bottom right, rgb(0, 208, 255),blue)
+}
+
+body h1 {
+    color: white;
+}
+
+.order h2 a {
+    color: white;
+}
+
+.order ul li {
+    color: white;
+}

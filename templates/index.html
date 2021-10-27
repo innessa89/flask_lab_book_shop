@@ -1,11 +1,13 @@
 <html>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <head>
         <title>{{ title }} - Orders</title>
     </head>
+    <Header><h1>Ina Book Shop</h1></Header>
     <body>
         <h1>List Of Orders</h1>
         {% for order in orders %}
-        <div>
+        <div class="Order">
             <!-- <p>
                 Customer Name: {{ order.name }}: Book Name: <b>{{ order.book_name }}</b>, <b>{{ order.quantity }}</b>, <b>{{ order.date }}</b>
             </p> -->
