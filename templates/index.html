@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>{{ title }} - Orders</title>
+    </head>
+    <body>
+        <h1>List Of Orders</h1>
+        {% for order in orders %}
+        <div>
+            <!-- <p>
+                Customer Name: {{ order.name }}: Book Name: <b>{{ order.book_name }}</b>, <b>{{ order.quantity }}</b>, <b>{{ order.date }}</b>
+            </p> -->
+            <h2><a href="/orders/{{ order.id }}">Order {{ order.id }}</a></h2>
+            <ul>
+                <li>Customer name: {{ order.name }}</li>
+                <li>Book name:{{ order.book_name }}</li>
+                <li>Book Quantity: {{ order.quantity }}</li>
+                <li>Order Date: {{ order.date }}</li>
+            </ul>
+        </div>
+        {% endfor %}
+    </body>
+</html>
